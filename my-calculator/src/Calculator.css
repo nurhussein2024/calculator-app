@@ -1,0 +1,54 @@
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    width: 320px;
+    padding: 20px;
+    background: url('wood-texture.jpg'); /* صورة الخلفية الخشبية */
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .display {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  button.zero {
+    grid-column: span 2;
+  }
+  
